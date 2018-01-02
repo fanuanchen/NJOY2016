@@ -9736,7 +9736,7 @@ contains
    endif
 
    !--record reaction information
-   if (jzap.ne.0) go to 725
+   if (jzap.ne.0.or.jzap.ne.-1) go to 725
    if (imf18.eq.1) go to 721
    if (mth.eq.iabs(mf18(imf18-1))) go to 790
    if (mth.gt.iabs(mf18(imf18-1))+1) go to 721
